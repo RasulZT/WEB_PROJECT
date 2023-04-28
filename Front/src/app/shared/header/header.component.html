@@ -1,0 +1,27 @@
+<div class="header">
+  <p class="header_name">
+    TestKZ
+  </p>
+  <div class="header_info">
+
+    <p (click)="goToHome()">
+      Home
+    </p>
+
+    <p (click)="goToPrice()">
+      Prices
+    </p>
+
+    <p (click)="goToAbout()">
+      About us
+    </p>
+    <p >
+       Ваша роль: {{getRole()}}
+    </p>
+
+  </div>
+  <div class="header_images">
+    <img  (click)="login()" src="assets/logo_icon.png" *ngIf="!authService.isLoggedIn">
+    <img  (click)="logout()" src="https://cdn-icons-png.flaticon.com/512/1828/1828479.png" *ngIf="authService.isLoggedIn">
+  </div>
+</div>

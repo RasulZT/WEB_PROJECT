@@ -1,0 +1,54 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  background-color: #5E5694;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 200px;
+
+  &_name {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    padding: 0px 50px;
+    &:hover{
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  &_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & p{
+      font-size: 17px;
+      padding-right: 24px;
+      color: white;
+
+      &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &_images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  & img{
+    height: 32px;
+    width: 32px;
+    margin-left: 12px;
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+}

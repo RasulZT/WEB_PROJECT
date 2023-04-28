@@ -1,0 +1,62 @@
+.home_container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  &_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_start{
+      margin-top: 80px;
+      padding: 20px;
+      border-radius: 3px;
+      font-family: "Book Antiqua";
+      font-size: 40px;
+      border: 1px solid blueviolet;
+      &:hover{
+        background-color: #c18ef6;
+        cursor: pointer;
+      }
+    }
+
+    &_hello{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 10px;
+
+      & h1{
+        font-family: sans-serif;
+      }
+
+      & img{
+        height: 28px;
+        width: 28px;
+      }
+
+    }
+
+    &_logo{
+      padding-top: 20px;
+      height: 85px;
+      width: 140px;
+    }
+
+    &_main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & p{
+        font-size: 20px;
+        font-family: sans-serif;
+        text-align: center ;
+      }
+    }
+  }
+
+
+}

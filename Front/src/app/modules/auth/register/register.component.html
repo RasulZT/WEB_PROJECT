@@ -1,0 +1,28 @@
+<div class="login">
+  <div class="login_cont">
+    <div class="login_cont_mojo">
+      <img class="login_cont_mojo_img" src="https://st3.depositphotos.com/1642684/18105/v/600/depositphotos_181059846-stock-illustration-vector-illustration-of-kid-writing.jpg">
+      <p class="login_cont_mojo_txt">TestKZ</p>
+    </div>
+    <div class="login_cont_form">
+      <p class="form_title">Signup</p>
+      <input class="form_inp" type="text" placeholder="Email" [(ngModel)]="username">
+      <input class="form_inp" type="password" placeholder="Password" [(ngModel)]="password">
+      <input class="form_inp" type="text" placeholder="Name" [(ngModel)]="name">
+      <div>
+        <input type="radio" name="role" value="Teacher" [(ngModel)]="selectedRole">Teacher
+      </div>
+      <div>
+        <input type="radio" name="role" value="Student" [(ngModel)]="selectedRole">Student
+      </div>
+      <div class="form_actions">
+        <button class="form_actions_login" (click)="register()">
+          Signup
+        </button>
+        <button class="form_actions_signup" (click)="goToLogin()">
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
